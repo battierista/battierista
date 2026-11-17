@@ -1,9 +1,0 @@
-[general]
-opencode-executable=opencode
-active-mode=terminal
-
-[terminal]
-params=
-
-[web]
-port=4096
