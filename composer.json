@@ -1,0 +1,11 @@
+{
+	"require" : {
+		"twbs/bootstrap" : "^5.3"
+	},
+	"description" : "Battierista Joomla template",
+	"authors" : [{
+			"name" : "battierista",
+			"email" : "battierista@gmail.com"
+		}
+	]
+}

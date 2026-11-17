@@ -1,0 +1,307 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import "swatch";
+
+
+$primary: $concrete1;
+$secondary: $vegetal-summer2;
+$tertiary: $vegetal-summer1;
+
+$brand-font-family : "Sigmar One";
+$common-font-family : "Open Sans";
+
+$headings-font-family: "Oswald";
+$h1-font-size: 1.6rem;
+$h2-font-size: 1.2rem;
+
+$btn-font-family: "Oswald";
+$btn-font-size: 1.1rem;
+
+/* $input-background-color : color.adjust($concrete1, $lightness: 20%, $saturation: 5%);*/
+$input-background-color : $concrete2;
+$input-border-color : transparent;
+$input-border-color-onfocus : $concrete1;
+$input-border-radius : .4rem;
+$input-border-size : 2px;
+$input-padding : .6rem;
+
+@import "../vendor/twbs/bootstrap/scss/bootstrap";
+
+body {
+	font-family:$common-font-family;
+	margin: 0;
+	padding: 0;
+	background: $sky-lighter;
+}
+
+h1, h2, h3, h4 {
+	font-family: $headings-font-family;
+}
+
+h1 {
+	color: $black;
+	font-size: $h1-font-size;
+}
+
+h2 {
+	color: $vegetal-summer2;
+	font-size: $h2-font-size;
+}
+
+a {
+	color: color.change($primary, $saturation:75%, $lightness: 30%);
+}
+
+a:hover {
+	color: color.change($primary, $saturation:100%, $lightness: 30%);
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+	text-decoration: none;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+table {
+	max-width:100%;
+	overflow:scroll;
+}
+
+header nav {
+  background-color: $white;
+}
+
+#page, header nav>div, footer>div {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+#page {
+	background-color: $white;
+	box-shadow: 0 0 2rem rgba(135, 215, 190, .3);
+}
+
+main, header>nav, footer>div, #page>div {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding:.4rem .8rem;
+}
+
+main > DIV {
+	padding:0;
+}
+
+footer {
+  	margin-top: 1rem;
+	background-color: $vegetal-summer2;
+	
+	p {
+		color: $white;
+		opacity: 0.6;
+		width: 100%;
+		text-align: center;
+		
+		a {
+			color: inherit;
+		}
+	}
+	
+	nav ul.navbar-nav {
+	  display:block;
+	  width:auto;
+	  text-align:center;
+	  margin:1.4rem auto;
+	  
+	  li.nav-item {
+	  	display:inline-block;
+	  	margin: 0 1rem;
+	  	
+	  	a.nav-link {
+			color: $white;
+			border-color: $white;
+			border-width: 1px;
+		}
+	  }
+	}
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="search"], input[type="url"], input[type="tel"],textarea, select {
+	font-size: 1rem !important;
+	border: solid $input-border-size $input-border-color !important;
+	border-radius: $input-border-radius !important;
+	color: $black !important;
+	background-color: $input-background-color !important;
+	padding: $input-padding !important;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="url"]:focus, input[type="tel"]:focus,textarea:focus, select:focus {
+	border: solid $input-border-size $input-border-color-onfocus !important;
+	color: $black !important;
+}
+
+/* Surcharge icônes pour Joomla 5 */
+.icon-calendar::before {
+    content: "📅";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+.icon-eye::before {
+    content: "👁️";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+.icon-eye-slash::before {
+    content: "🙈";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+.icon-fw {
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+}
+
+#jumbotron {
+	overflow: hidden;
+	text-align: center;
+	padding: 0;
+	
+	img {
+		min-height: 12rem;
+	    object-fit: cover;
+	    object-position: center;
+	}
+}
+
+#sp-page-builder .sppb-section-title {
+    margin: 0px;
+	h2 {
+		font-size: 1.2rem;
+		color:$vegetal-summer2;
+	}
+}
+
+.mod-dpcalendar-upcoming-horizontal__group {
+	padding: 0;
+}
+
+.mod-dpcalendar-upcoming-horizontal__information {
+	border-width: 0 0 0 4px;
+	border-style: solid;
+	padding: 0 1em;
+}
+
+.mod-dpcalendar-upcoming-horizontal__date {
+    padding: 2px 0;
+    font-style: normal;
+}
+
+.mod-dpcalendar-upcoming-horizontal H2{
+	font-size:1rem;
+	color:#888;
+}
+
+.dp-location__title {
+	color:#888;
+}
+
+.dp-link {
+	text-decoration:none;	
+}
+
+.card {
+	overflow: hidden
+}
+
+/* battierista custom class */
+.card-img-theater {
+    filter: saturate(1);
+    background: linear-gradient(125deg, $concrete1, $vegetal-summer2 60%);
+	
+	img {
+	    filter: contrast(1.6) grayscale(1);
+	    mix-blend-mode: screen;
+	    opacity: .9;
+	}
+	
+	img:hover {
+	    filter: contrast(1) grayscale(0);
+	    mix-blend-mode: none;
+	    opacity: 1;
+	}
+}
+
+.card-img-top {
+	height: 250px;
+	width: 100%;
+	object-fit:cover;
+	margin: auto;
+}
+
+.card-title {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+/* com-contact-category */
+div.category-desc {
+	img {
+		width: 100%;
+		height: auto;
+	}
+	p {
+		margin:1.4rem 0;
+	}	
+}
+
+/* convertforms css overide */
+.convertforms {
+	h1 {
+		color: $black;
+		font-family: $headings-font-family;
+		font-size: $h1-font-size;
+	}
+	h2 {
+		color:$vegetal-summer2;
+		font-family: $headings-font-family;
+		font-size: $h2-font-size;
+	}	
+	.cf-btn {
+	    background-color: $primary;
+	    color: $black;
+	    font-family: $btn-font-family;
+	    font-size: $btn-font-size;
+	}
+	.cf-input {
+	    font-size: 1rem;
+	    border: solid $input-border-size $input-border-color;
+	    border-radius: $input-border-radius;
+	    color: $black;
+	    background-color: $input-background-color;
+	    padding: $input-padding;
+	}
+	.cf-input:focus, .cf-phone-number-wrapper>.tf-phone-control:focus {
+		border: solid $input-border-size $input-border-color-onfocus !important;
+		color: $black;
+	}	
+	.cf-phone-number-wrapper>.tf-phone-control {
+		border: solid $input-border-size $input-border-color !important;
+	}	
+}
+
+.convertforms .cfupload .dz-message {
+    border: none;
+    background-color: $input-background-color;
+    border-radius: $input-border-radius;
+    padding: $input-padding;
+}
