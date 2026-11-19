@@ -250,12 +250,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
-}
-@media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 1.5rem;
-  }
+  font-size: 1rem;
 }
 
 h5, .h5 {
@@ -8256,7 +8251,7 @@ textarea.form-control-lg {
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: 1rem !important;
 }
 
 .fs-5 {
@@ -11812,9 +11807,6 @@ textarea.form-control-lg {
   .fs-2 {
     font-size: 1.4rem !important;
   }
-  .fs-4 {
-    font-size: 1.5rem !important;
-  }
 }
 @media print {
   .d-print-inline {
@@ -11875,6 +11867,36 @@ h2, .h2 {
 h3, .h3 {
   color: #475718;
   font-size: 1.2rem;
+}
+
+h4, .h4 {
+  color: #475718;
+  font-size: 1rem;
+}
+
+div.item-page {
+  padding: 1rem 1.6rem;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Oswald";
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+div.page-header h1, div.page-header .h1 {
+  margin: 0.5rem 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.navbar-brand {
+  font-family: "Oswald";
+  text-transform: uppercase;
 }
 
 a {
@@ -12035,6 +12057,47 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, inp
 
 .card {
   overflow: hidden;
+}
+
+section {
+  margin: 1rem 0;
+}
+
+ul.mod-articles-items {
+  padding: 0;
+}
+
+ul.mod-articles-items > li {
+  list-style: none;
+}
+
+article h3, article .h3 {
+  font-size: 1.2rem;
+}
+
+article h4, article .h4 {
+  font-size: 1rem;
+}
+
+article figure {
+  filter: saturate(1);
+  background: linear-gradient(125deg, #D5CA92, #475718 60%);
+}
+
+article figure img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+  filter: contrast(1.6) grayscale(1);
+  mix-blend-mode: screen;
+  opacity: 0.9;
+}
+
+article figure img:hover {
+  filter: contrast(1) grayscale(0);
+  mix-blend-mode: none;
+  opacity: 1;
 }
 
 /* battierista custom class */
