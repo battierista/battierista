@@ -11883,7 +11883,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: "Oswald";
   font-weight: 500;
   line-height: 1.2;
-  color: var(--bs-heading-color);
 }
 
 div.page-header h1, div.page-header .h1 {
