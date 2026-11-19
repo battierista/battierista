@@ -16,6 +16,7 @@ $headings-font-family: $brand-font-family;
 $h1-font-size: 1.6rem;
 $h2-font-size: 1.4rem;
 $h3-font-size: 1.2rem;
+$h4-font-size: 1rem;
 
 $btn-font-family: $brand-font-family;
 $btn-font-size: 1.1rem;
@@ -54,6 +55,36 @@ h2 {
 h3 {
 	color: $vegetal-summer2;
 	font-size: $h3-font-size;
+}
+
+h4 {
+	color: $vegetal-summer2;
+	font-size: $h4-font-size;
+}
+
+div.item-page {
+	padding:1rem 1.6rem;
+}
+
+h6, h5, h4, h3, h2, h1 {
+	margin: 1rem 0 0.5rem 0;
+	font-family: $headings-font-family;
+	font-weight: 500;
+	line-height: 1.2;
+	color: var(--bs-heading-color);
+}
+
+div.page-header h1 {
+	margin: 0.5rem 0;
+}
+
+p {
+	margin: 0.5rem 0;
+}
+
+.navbar-brand {
+	font-family: $headings-font-family;
+	text-transform: uppercase;
 }
 
 
@@ -220,6 +251,47 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .card {
 	overflow: hidden
+}
+
+section {
+	margin:1rem 0;
+}
+
+ul.mod-articles-items {
+	padding:0;
+}
+
+ul.mod-articles-items > li {
+	list-style:none;
+}
+
+article h3 {
+	font-size: $h3-font-size;
+}
+
+article h4 {
+	font-size: $h4-font-size;
+}
+
+article figure {
+	filter: saturate(1);
+	background: linear-gradient(125deg, $concrete1, $vegetal-summer2 60%);
+}
+
+article figure img {
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
+	margin: auto;
+	filter: contrast(1.6) grayscale(1);
+	mix-blend-mode: screen;
+	opacity: .9;
+}
+
+article figure img:hover {
+	filter: contrast(1) grayscale(0);
+	mix-blend-mode: none;
+	opacity: 1;
 }
 
 /* battierista custom class */
