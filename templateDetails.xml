@@ -1,40 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="template" client="site">
+<extension type="template" client="site" method="upgrade">
     <name>battierista</name>
     <creationDate>2025-02</creationDate>
     <author>battierista</author>
     <authorEmail>battierista@gmail.com</authorEmail>
-  	<version>0.0.1</version>
-  	<description>Identité graphique du site battieres.net</description>
-  	<files>
-    	<file>index.php</file>
-		<file>templateDetails.xml</file>
-		<folder>images</folder>
-		<folder>css</folder>
-    	<folder>images</folder>
-  	</files>
-	<images>
-		<image>template_thumbnail.png</image>
-		<image>template_preview.png</image>
-	</images>
-	<params>
-    	<field name="color01" type="color" label="Brique" default="#92654E" />
-    	<field name="color02" type="color" label="Noir" default="#252525" />
-    	<field name="color03" type="color" label="Blanc" default="#fff" />
-    	<field name="color04" type="color" label="Béton 1" default="#D5CA92" />
-    	<field name="color05" type="color" label="Béton 2" default="#EFEBD7" />
-    	<field name="color06" type="color" label="Ciel profond" default="#60D6E3" />
-    	<field name="color07" type="color" label="Ciel léger" default="#B2E4EA" />
-    	<field name="color08" type="color" label="Ciel plus léger" default="#E6F8FA>" />
-    	<field name="color09" type="color" label="Ciel nuage" default="#fff" />
-    	<field name="color10" type="color" label="Végétal été 1" default="#B3A83E" />
-    	<field name="color11" type="color" label="Végétal été 2" default="#475718" />
-    	<field name="color12" type="color" label="Végétal printemps" default="#84B300" />
-	</params>
-  	<positions>
-  		<position>header-nav-menu</position>
+    <version>0.0.1</version>
+    <description>Identité graphique du site battieres.net</description>
+    <files>
+        <file>index.php</file>
+        <file>templateDetails.xml</file>
+        <file>manifest.webmanifest</file>
+        <file>template_preview.png</file>
+        <file>template_thumbnail.png</file>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>img</folder>
+        <folder>js</folder>
+        <folder>scss</folder>
+    </files>
+    <images>
+        <image>template_thumbnail.png</image>
+        <image>template_preview.png</image>
+    </images>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="color01" type="color" label="Brique" default="#92654E" />
+                <field name="color02" type="color" label="Noir" default="#252525" />
+                <field name="color03" type="color" label="Blanc" default="#fff" />
+                <field name="color04" type="color" label="Béton 1" default="#D5CA92" />
+                <field name="color05" type="color" label="Béton 2" default="#EFEBD7" />
+                <field name="color06" type="color" label="Ciel profond" default="#60D6E3" />
+                <field name="color07" type="color" label="Ciel léger" default="#B2E4EA" />
+                <field name="color08" type="color" label="Ciel plus léger" default="#E6F8FA" />
+                <field name="color09" type="color" label="Ciel nuage" default="#fff" />
+                <field name="color10" type="color" label="Végétal été 1" default="#B3A83E" />
+                <field name="color11" type="color" label="Végétal été 2" default="#475718" />
+                <field name="color12" type="color" label="Végétal printemps" default="#84B300" />
+            </fieldset>
+        </fields>
+    </config>
+    <positions>
+        <position>header-nav-menu</position>
         <position>decoration</position>
-		<position>main</position>
-		<position>footer</position>
-  	</positions>
+        <position>main</position>
+        <position>footer</position>
+    </positions>
 </extension>

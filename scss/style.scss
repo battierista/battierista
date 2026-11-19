@@ -9,14 +9,15 @@ $primary: $concrete1;
 $secondary: $vegetal-summer2;
 $tertiary: $vegetal-summer1;
 
-$brand-font-family : "Sigmar One";
+$brand-font-family : "Oswald";
 $common-font-family : "Open Sans";
 
-$headings-font-family: "Oswald";
+$headings-font-family: $brand-font-family;
 $h1-font-size: 1.6rem;
-$h2-font-size: 1.2rem;
+$h2-font-size: 1.4rem;
+$h3-font-size: 1.2rem;
 
-$btn-font-family: "Oswald";
+$btn-font-family: $brand-font-family;
 $btn-font-size: 1.1rem;
 
 /* $input-background-color : color.adjust($concrete1, $lightness: 20%, $saturation: 5%);*/
@@ -49,6 +50,12 @@ h2 {
 	color: $vegetal-summer2;
 	font-size: $h2-font-size;
 }
+
+h3 {
+	color: $vegetal-summer2;
+	font-size: $h3-font-size;
+}
+
 
 a {
 	color: color.change($primary, $saturation:75%, $lightness: 30%);
@@ -180,14 +187,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 		min-height: 12rem;
 	    object-fit: cover;
 	    object-position: center;
-	}
-}
-
-#sp-page-builder .sppb-section-title {
-    margin: 0px;
-	h2 {
-		font-size: 1.2rem;
-		color:$vegetal-summer2;
 	}
 }
 

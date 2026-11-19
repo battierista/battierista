@@ -11,6 +11,7 @@
 defined('_JEXEC') or die;
 
 use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\Router\Route;
 
 if (!$list) {
@@ -32,8 +33,8 @@ if (!$list) {
                 
                 <div class="card-body">
 	                <h3 class="card-title"><a href="<?php echo $article->link; ?>"><?php echo htmlspecialchars($article->title); ?></a></h3>
-                    <p class="card-text"><?php echo JHtml::_('string.truncate', strip_tags($article->introtext), 100); ?></p>
-                    <p class="card-text text-muted"><?php echo JHtml::_('date', $article->created, JText::_('DATE_FORMAT_LC3')); ?></p>
+                    <p class="card-text"><?php echo HTMLHelper::_('string.truncate', strip_tags($article->introtext), 100); ?></p>
+                    <p class="card-text text-muted"><?php echo HTMLHelper::_('date', $article->created, Text::_('DATE_FORMAT_LC3')); ?></p>
                 </div>
               </div>
         </div>
